@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,700');
+
+
+@media (max-width:767px){
+	.navbar{
+	padding:0 15px;
+	margin:0;
+	}
+}
+h1,h2,h3,p,a{
+	margin:0;
+	padding:0;
+	color:black;
+	font-family: 'Roboto Mono', monospace;
+}
+html, body, header{
+	margin:0;
+	padding:0;
+}
+.fa{
+	color:white;
+}
+.fa-copyright{
+	color:rgba(100,100,100,1);
+	margin-right:4px;
+}
+.filter-60{
+	filter: brightness(70%);
+    -webkit-filter: brightness(70%);
+    -moz-filter: brightness(70%);
+    -o-filter: brightness(70%);
+    -ms-filter: brightness(70%);
+}
+
+header .carousel{
+	position:relative;
+}
+ .carousel > .navbar{
+	position:absolute;
+	z-index:100;
+	margin:0;
+	background:transparent;
+	border-radius:0;
+	border:none;
+	transition:position 1s ease-out;
+}
+.trns{
+	right:-100px;
+	transition:right 1s ease-out;
+}
+header .carousel > .icon-navbar.navbar{
+	bottom:100px;
+	left:0;
+}
+header .carousel > .main-nav.navbar{
+	top:60px;
+	right:0;
+}
+
+header .navbar-default > .navbar-nav > li > a{
+	font-size:1.2em;
+	text-align:center;
+	color:white;
+	padding:0;
+	height:40px;
+	line-height:40px;
+	width:50px;
+	display:block;
+}
+
+header .icon-navbar.navbar-default > .navbar-nav > li > a{
+	
+}
+
+header .navbar-default > .navbar-nav > li> a .fa{
+	font-size:1.3em;
+	transition:color .5s ease-in-out;
+}
+
+
+header .navbar > .navbar-nav > li{
+	display:block;
+	float:none;
+}
+header .icon-navbar.navbar > .navbar-nav > li{	
+	border-radius:0 5px 5px 0;
+	transition:background-color .3s ease-out;
+}
+
+header .navbar > .navbar-nav > li.active a,
+header .main-nav.navbar > .navbar-nav > li{	
+	transition:background-color .3s ease-out;
+	background-color:rgba(0,0,0,.5);
+	margin:5px 0;	
+	border-radius:5px 0 0 5px;
+}
+header .navbar > .navbar-nav > li.active a{
+	background-color:rgba(205,26,60,1);
+}
+/*Hover li*/
+header .navbar-default > .navbar-nav > li:hover > a .fa{
+	color:white;
+}
+header .main-nav.navbar  >.navbar-nav > li:hover,
+header .icon-navbar.navbar > .navbar-nav > li:hover{
+	background-color:rgba(5,5,5,.8);
+}
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus{
+	background-color:rgba(205,26,60,1);
+}
+
+
+/*Carousel animation*/
+.carousel.fade{
+	opacity:1;
+}
+.carousel.fade .item{
+	opacity:0;
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	display:block;
+	transition:opacity .8s ease-in-out;
+	
+}
+.carousel .layer{
+	background: -webkit-linear-gradient(top left,rgba(0,0,0,.5) 0%,
+		rgba(20,20,20,.5) 36%,rgba(40,40,40,.5) 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.carousel.fade .item:first-child{
+	opacity:1;
+	position:relative;
+	top:auto;
+	
+}	
+.carousel.fade .item.active{
+	opacity:1;
+}
+/*carousel BG*/
+.fullHeight > .item{
+	width:100%;
+	height:100%;
+	background-position:center center;
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+
+/*Carousel Written*/
+.carousel .item  h1,.carousel .item p{
+	margin:auto;
+	color:white;	
+	width:300px;
+}
+.carousel .item  h1{
+	margin-top:20%;
+	font-size:3.4em;
+	font-weight:700;
+	text-shadow:1px 1px 5px rgba(0,0,0,.7);
+	letter-spacing:-2px;
+}
+.carousel .item  h1 span{
+	margin-left:-10px;
+	color:#fff902;
+}
+.carousel .item p{
+	letter-spacing:2px;
+	font-size:1.2em;
+	color:rgba(200,200,200,1);
+}
+/*Carousel indicators*/
+
+.carousel-indicators li{
+	border-radius:0;
+	width:35px;
+	transition:all .3s ease-out;
+}
+
+/*Tooltip Right Navbar*/
+	
+	.tooltip.in{
+		opacity:.98;
+	}
+	
+	.tooltip.left{
+		left:400px;
+		font-size:1.1em;
+		text-align:center;
+	}
+	.tooltip-inner{
+		min-height:30px;
+		color:white;
+		background-color:rgba(50,50,50,1);
+	}
+	.tooltip.left > .tooltip-arrow{
+		border-left-color:rgba(50,50,50,1);
+	}
+	
+/*Description area*/
+
+
+.description-area{
+	padding-top:100px;
+	padding-bottom:100px;
+}
+.description-area p {
+	
+	line-height:2.5;
+	font-size:1.4em;
+	position:relative;
+	text-align:justify;
+}
+.description-area p span.m{
+	font-size:3em;
+	line-height:.5em;
+}
+.description-area:after{
+	content:"";
+	text-align:center;
+	width:20%;
+	margin:100px 35% 0;
+	display:inline-block;
+	border-bottom:3px solid rgba(50,50,50,.6);
+}
+.description-area p  span.email{
+	text-decoration:underline;
+}
+
+/*About Area & Contact Area*/
+.about-area{
+	padding-top:100px;
+	margin-bottom:100px;
+}
+#contact{
+	border-top:1px solid rgba(150,150,150,.3);
+}
+.contact-area{
+	padding-bottom:100px;
+	padding-top:100px;
+}
+.about-area p, 
+.contact-area p{
+	line-height:2;
+	font-size:1.3em;
+}
+.contact-area h2,
+.about-area h2{
+	letter-spacing:2px;
+	margin:20px;
+	text-align:center;
+	font-size:1.8em;
+}
+
+.contact-area a{
+	text-decoration:underline;
+	font-size:1.2em;
+	margin-top:20px;
+	color:rgb(20,20,20);
+	display:block;
+	transition:text-decoration .1s;
+}
+.contact-area a:hover{
+	text-decoration:none;
+}
+.contact-area h4{
+	color:rgba(100,100,100,1);
+	font-size:1.2em;
+}
+.contact-area h3{
+	color:rgba(50,50,50,1);
+	margin-top:20px;
+}
+.contact-area ul{
+	margin-top:20px;
+}
+.contact-area ul li{
+	margin:5px 10px;
+}
+.contact-area ul li:hover a .fa{
+	color:#CD1A3C;
+}
+.contact-area ul li a .fa{
+	color:black;
+	font-size:1.6em;
+	transition:color .3s ease-in-out;
+}
+/*Footer*/
+.footer-area{
+	border-top:1px solid rgba(150,150,150,.3);
+}
+.main-area{
+		
+}
+.footer-area p{
+	line-height:7;
+	font-size:1.2em;
+	text-align:center;
+	color:rgb(150,150,150);
+}
+/*Work Area*/
+.work-area{
+	background-color:#1F2326;
+}
+.work-area h1{
+	color:white;
+	font-size:2.4em;
+	text-align:center;
+	margin-top:30px;
+}
+
+
+.work-area .carousel-control {
+	line-height:800px;
+	transition:all .3s ease-out;
+}
+.work-area .carousel-control span.fa{
+	font-size:2.2em;
+	transition:all .3s ease-out;
+}
+.work-area .carousel-control{
+	background:none;
+}
+.work-area .carousel .item a.btn:hover{
+	background-color:rgba(255,255,255,1);
+	color:black;
+}
+.work-area .carousel .item a.btn{
+	border-radius:1px;
+	border:2px solid white;
+	background-color:transparent;
+}
+.work-area .carousel .item a.btn-primary{
+
+}
+.work-area .carousel .item a{
+	margin:25px auto;
+	color:white;
+	text-align:center;
+	width:200px;
+	font-size:1.3em;
+	display:block;
+	transition:all .4s ease-in;
+}
+.work-area .carousel .item{
+	transition:all 1s;
+	margin:30px 0;
+}
+.work-area .carousel .item img{
+	box-shadow:0 0 20px 3px rgba(0,0,0,.2);
+}
+@media (min-width:576px){
+	.work-area .carousel .item img{
+		height:800px;
+		margin:0 auto;
+		
+	}
+}
+
+
