@@ -1,10 +1,5 @@
 $(function(){
 	
-	var f = function f()
-	{
-		alert(f===f);
-	};
-	f();
 	var winHeight = $(window).height();
 	
 	
